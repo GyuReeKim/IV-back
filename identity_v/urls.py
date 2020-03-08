@@ -28,6 +28,9 @@ urlpatterns = [
     # path('api-token-auth/', obtain_jwt_token),
     path('rest-auth/', include('rest_auth.urls')), # rest-auth/login # rest-auth/logout
     path('rest-auth/registration/', include('rest_auth.registration.urls')),
+    
+    # restful
+    path('api/accounts/', include('accounts.urls')),
 ]
 
 # MEDIA
