@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Character, Position, Persona, Trait, Survivor
+from .models import Character, Position, Persona, Trait, Survivor, Hunter
 from rest_framework_recursive.fields import RecursiveField
 
 
@@ -88,5 +88,47 @@ class SurvivorSetSerializer(serializers.ModelSerializer):
             'external_trait3', 'external_trait3_explanation', 
             'external_trait4', 'external_trait4_explanation', 
             'rumor', 'persona_build_explanation',
+        )
+        read_only_fields = ('id',)
+
+
+class HunterSerializer(serializers.ModelSerializer):
+    character = CharacterSerializer()
+
+    class Meta:
+        model = Hunter
+        fields = (
+            'id', 'character', 'position_explanation', 
+            'external_trait1', 'external_trait1_explanation', 
+            'external_trait2', 'external_trait2_explanation', 
+            'external_trait3', 'external_trait3_explanation', 
+            'external_trait4', 'external_trait4_explanation', 
+            'rumor', 'persona_build_explanation', 'trait_recommendation',
+            'shapeshift1', 'shapeshift1_explanation',
+            'shapeshift1_sub', 'shapeshift1_sub_explanation',
+            'shapeshift2', 'shapeshift2_explanation',
+            'shapeshift2_sub', 'shapeshift2_sub_explanation',
+            'shapeshift3', 'shapeshift3_explanation',
+            'shapeshift3_sub', 'shapeshift3_sub_explanation',
+        )
+        read_only_fields = ('id',)
+
+
+class HunterSetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Hunter
+        fields = (
+            'id', 'position_explanation', 
+            'external_trait1', 'external_trait1_explanation', 
+            'external_trait2', 'external_trait2_explanation', 
+            'external_trait3', 'external_trait3_explanation', 
+            'external_trait4', 'external_trait4_explanation', 
+            'rumor', 'persona_build_explanation', 'trait_recommendation',
+            'shapeshift1', 'shapeshift1_explanation',
+            'shapeshift1_sub', 'shapeshift1_sub_explanation',
+            'shapeshift2', 'shapeshift2_explanation',
+            'shapeshift2_sub', 'shapeshift2_sub_explanation',
+            'shapeshift3', 'shapeshift3_explanation',
+            'shapeshift3_sub', 'shapeshift3_sub_explanation',
         )
         read_only_fields = ('id',)

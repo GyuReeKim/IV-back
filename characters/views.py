@@ -1,13 +1,13 @@
 from rest_framework.response import Response
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, get_object_or_404
-from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer, TraitSerializer, SurvivorSerializer, SurvivorSetSerializer
+from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer, TraitSerializer, SurvivorSerializer, SurvivorSetSerializer, HunterSerializer, HunterSetSerializer
 
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from .models import Character, Position, Persona, Trait, Survivor
+from .models import Character, Position, Persona, Trait, Survivor, Hunter
 
 # Create your views here.
 
@@ -282,4 +282,62 @@ def update_survivor_detail(request, survivor_id, character_id):
 def delete_survivor_detail(request, id):
     survivor = get_object_or_404(Survivor, id=id)
     survivor.delete()
+    return HttpResponse(status=204)
+
+
+
+# 감시자 리스트
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def hunter_list(request):
+    hunters = Hunter.objects.all()
+    serializer = HunterSerializer(hunters, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+# 감시자 생성
+@api_view(['POST'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def hunter_create(request, character_id):
+    character = get_object_or_404(Character, id=character_id)
+    set_serializer = HunterSetSerializer(data=request.data)
+    if set_serializer.is_valid():
+        hunter = set_serializer.save(character=character)
+        serializer = HunterSerializer(hunter)
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
+
+
+# 감시자 정보
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def hunter_detail(request, id):
+    hunter = get_object_or_404(Hunter, id=id)
+    serializer = SurvivorSerializer(hunter)
+    return JsonResponse(serializer.data)
+
+
+# 감시자 수정
+@api_view(['PUT'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def update_hunter_detail(request, hunter_id, character_id):
+    hunter = get_object_or_404(Hunter, id=hunter_id)
+    character = get_object_or_404(Character, id=character_id)
+    set_serializer = HunterSetSerializer(hunter, data=request.data)
+    if set_serializer.is_valid():
+        update_hunter = set_serializer.save(character=character)
+        serializer = HunterSerializer(update_hunter)
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
+
+
+# 감시자 삭제
+@api_view(['DELETE'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def delete_hunter_detail(request, id):
+    hunter = get_object_or_404(Hunter, id=id)
+    hunter.delete()
     return HttpResponse(status=204)

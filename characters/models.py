@@ -74,3 +74,37 @@ class Survivor(models.Model):
 
     def __str__(self):
         return f'{self.character.another_name} (생존자)'
+
+
+class Hunter(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    positions_of_hunter = models.ManyToManyField(Position, related_name="hunters_of_position")
+    position_explanation = models.TextField(null=True, blank=True)
+    external_trait1 = models.CharField(max_length=50)
+    external_trait1_explanation = models.TextField()
+    external_trait2 = models.CharField(max_length=50, null=True, blank=True)
+    external_trait2_explanation = models.TextField(null=True, blank=True)
+    external_trait3 = models.CharField(max_length=50, null=True, blank=True)
+    external_trait3_explanation = models.TextField(null=True, blank=True)
+    external_trait4 = models.CharField(max_length=50, null=True, blank=True)
+    external_trait4_explanation = models.TextField(null=True, blank=True)
+    rumor = models.TextField()
+    suitable_personas_of_hunter = models.ManyToManyField(Persona, related_name="suitable_hunters_of_persona")
+    persona_build_explanation = models.TextField(null=True, blank=True)
+    suitable_traits_of_hunter = models.ManyToManyField(Trait, related_name="suitable_hunters_of_trait")
+    trait_recommendation = models.TextField(null=True, blank=True)
+    shapeshift1 = models.CharField(max_length=50, null=True, blank=True)
+    shapeshift1_explanation = models.TextField(null=True, blank=True)
+    shapeshift1_sub = models.CharField(max_length=50, null=True, blank=True)
+    shapeshift1_sub_explanation = models.TextField(null=True, blank=True)
+    shapeshift2 = models.CharField(max_length=50)
+    shapeshift2_explanation = models.TextField()
+    shapeshift2_sub = models.CharField(max_length=50, null=True, blank=True)
+    shapeshift2_sub_explanation = models.TextField(null=True, blank=True)
+    shapeshift3 = models.CharField(max_length=50)
+    shapeshift3_explanation = models.TextField()
+    shapeshift3_sub = models.CharField(max_length=50, null=True, blank=True)
+    shapeshift3_sub_explanation = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.character.another_name} (감시자)'
