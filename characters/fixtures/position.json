@@ -1,0 +1,227 @@
+[
+    {
+        "model": "characters.position",
+        "pk": 1,
+        "fields": {
+            "position_name": "보조",
+            "position_grade": "상",
+            "position_role": "이 생존자는 팀원을 보조하는 능력이 뛰어납니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 2,
+        "fields": {
+            "position_name": "보조",
+            "position_grade": "중",
+            "position_role": "이 생존자는 팀원을 적당히 보조해줄 수 있습니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 3,
+        "fields": {
+            "position_name": "보조",
+            "position_grade": "하",
+            "position_role": "이 생존자는 팀원을 보조하는 능력이 없습니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 4,
+        "fields": {
+            "position_name": "해독",
+            "position_grade": "상",
+            "position_role": "이 생존자는 해독이 빠릅니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 5,
+        "fields": {
+            "position_name": "해독",
+            "position_grade": "중",
+            "position_role": "이 생존자는 해독에 무난합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 6,
+        "fields": {
+            "position_name": "해독",
+            "position_grade": "하",
+            "position_role": "이 생존자는 해독이 느립니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 7,
+        "fields": {
+            "position_name": "어그로",
+            "position_grade": "상",
+            "position_role": "이 생존자는 어그로에 뛰어납니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 8,
+        "fields": {
+            "position_name": "어그로",
+            "position_grade": "중",
+            "position_role": "이 생존자는 어그로에 무난합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 9,
+        "fields": {
+            "position_name": "어그로",
+            "position_grade": "하",
+            "position_role": "이 생존자는 어그로에 약합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 10,
+        "fields": {
+            "position_name": "구출",
+            "position_grade": "상",
+            "position_role": "이 생존자는 구출에 뛰어납니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 11,
+        "fields": {
+            "position_name": "구출",
+            "position_grade": "중",
+            "position_role": "이 생존자는 구출을 할 수 있습니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 12,
+        "fields": {
+            "position_name": "구출",
+            "position_grade": "하",
+            "position_role": "이 생존자는 구출에 약합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 13,
+        "fields": {
+            "position_name": "견제",
+            "position_grade": "상",
+            "position_role": "이 생존자는 감시자 견제에 뛰어납니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 14,
+        "fields": {
+            "position_name": "견제",
+            "position_grade": "중",
+            "position_role": "이 생존자는 감시자 견제가 가능합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 15,
+        "fields": {
+            "position_name": "견제",
+            "position_grade": "하",
+            "position_role": "이 생존자는 감시자 견제를 할 수 없습니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 16,
+        "fields": {
+            "position_name": "캠핑",
+            "position_grade": "상",
+            "position_role": "이 감시자는 캠핑에 뛰어납니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 17,
+        "fields": {
+            "position_name": "캠핑",
+            "position_grade": "중",
+            "position_role": "이 감시자는 캠핑에 적당합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 18,
+        "fields": {
+            "position_name": "캠핑",
+            "position_grade": "하",
+            "position_role": "이 감시자는 캠핑에 약합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 19,
+        "fields": {
+            "position_name": "추격",
+            "position_grade": "상",
+            "position_role": "이 감시자는 추격에 강합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 20,
+        "fields": {
+            "position_name": "추격",
+            "position_grade": "중",
+            "position_role": "이 감시자는 추격에 무난합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 21,
+        "fields": {
+            "position_name": "추격",
+            "position_grade": "하",
+            "position_role": "이 감시자는 추격에 약합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 22,
+        "fields": {
+            "position_name": "운영",
+            "position_grade": "상",
+            "position_role": "이 감시자는 운영에 강합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 23,
+        "fields": {
+            "position_name": "운영",
+            "position_grade": "중",
+            "position_role": "이 감시자는 운영에 무난합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 24,
+        "fields": {
+            "position_name": "운영",
+            "position_grade": "하",
+            "position_role": "이 감시자는 운영에 약합니다."
+        }
+    },
+    {
+        "model": "characters.position",
+        "pk": 25,
+        "fields": {
+            "position_name": "없음",
+            "position_grade": "없음",
+            "position_role": "없음"
+        }
+    }
+]

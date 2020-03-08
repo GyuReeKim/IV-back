@@ -1,0 +1,1666 @@
+[
+    {
+        "model": "characters.persona",
+        "pk": 1,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "호기심",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 자유롭게 행동하는 상태에서 암호장치를 해독하지 않고 있을 시, 가장 가까운 곳에 있는 완전히 해독되지 않은 암호 장치의 윤곽이 나타납니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 2,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "도주",
+            "persona_direction": 3,
+            "persona_parent": 1,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어오면 이동 속도가 즉시 3%만큼 증가합니다. 지속시간 120초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 3,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "도주",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "탈출구에 전기가 들어오면 이동 속도가 즉시 4%만큼 증가합니다. 지속시간 120초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 4,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "도주",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "탈출구에 전기가 들어오면 이동 속도가 즉시 5%만큼 증가합니다. 지속시간 120초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 5,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "새옹지마",
+            "persona_direction": 3,
+            "persona_parent": 4,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 암호 장치 해독 중 감전되었을 때, 감시자의 위치를 3초 동안 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 6,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "새옹지마",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "생존자가 암호 장치 해독 중 감전되었을 때, 감시자의 위치를 5초 동안 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 7,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "새옹지마",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "생존자가 암호 장치 해독 중 감전되었을 때, 감시자의 위치를 7초 동안 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 8,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "마지막 희망",
+            "persona_direction": 3,
+            "persona_parent": 7,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어오면 즉시 건강한 상태를 회복하며 돌진 속도가 50%만큼 증가합니다. 이 효과는 5초동안 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 9,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "주의력 분산",
+            "persona_direction": 3,
+            "persona_parent": 1,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어오면 감시자의 위치를 5초 동안 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 10,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "죽은 척",
+            "persona_direction": 3,
+            "persona_parent": 9,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자의 카운트다운 속도가 3%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 11,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "죽은 척",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "광기의 의자의 카운트다운 속도가 6%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 12,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "죽은 척",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "광기의 의자의 카운트다운 속도가 9%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 13,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "눈 가리고 아웅",
+            "persona_direction": 3,
+            "persona_parent": 9,
+            "persona_point": 1,
+            "persona_explanation": "암호 장치에 감전되면 100% 확률로 감시자에게 발견되지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 14,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "눈 가리고 아웅",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "암호 장치에 감전되면 100% 확률로 감시자에게 발견되지 않으며, 감전돼도 해독 진도가 깎이지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 15,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "눈 가리고 아웅",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "암호 장치에 감전되면 100% 확률로 감시자에게 발견되지 않으며, 감전돼도 해독 진도가 깎이지 않으며, 감전 동작 시간이 절반으로 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 16,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "소름",
+            "persona_direction": 3,
+            "persona_parent": 1,
+            "persona_point": 1,
+            "persona_explanation": "주변 36미터 범위 내의 감시자가 등뒤에서 자신을 바라볼 때 감시자의 방향이 지속적으로 표시됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 17,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "흔들다리 효과",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "주변 18미터 범위 이내에 위치한 생존자의 위치를 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 18,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "메기 효과",
+            "persona_direction": 6,
+            "persona_parent": 17,
+            "persona_point": 1,
+            "persona_explanation": "자신이 광기의 의자에 묶여 있는 동안 주변 12미터 범위 내의 다른 생존자들의 이동 속도가 4%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 19,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "메기 효과",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "자신이 광기의 의자에 묶여 있는 동안 주변 18미터 범위 내의 다른 생존자들의 이동 속도가 6%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 20,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "메기 효과",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "자신이 광기의 의자에 묶여 있는 동안 주변 24미터 범위 내의 다른 생존자들의 이동 속도가 8%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 21,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "말파리 효과",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 20,
+            "persona_explanation": "12미터 범위 내에 감시자가 8초 동안 있으면, 판자 내리는 속도가 8%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 22,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "말파리 효과",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "12미터 범위 내에 감시자가 8초 동안 있으면, 판자 내리는 속도가 14%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 23,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "말파리 효과",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "12미터 범위 내에 감시자가 8초 동안 있으면, 판자 내리는 속도가 20%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 24,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "위기 모면",
+            "persona_direction": 6,
+            "persona_parent": 23,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자에서 동료를 성공적으로 구출해낸 뒤, 자신과 해당 동료는 20초 동안 무적 상태가 되어 쓰러지지 않으며 치료를 받을 수 없게 됩니다. 지속시간 동안 받은 대미지는 무적 상태가 끝나는 순간 전부 적용됩니다. 구출에 성공한 생존자는 구출 성공 후 이 적성이 다시 발동되지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 25,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "살금살금",
+            "persona_direction": 6,
+            "persona_parent": 17,
+            "persona_point": 1,
+            "persona_explanation": "다른 생존자가 광기의 의자에 묶여 있는 동안, 광기의 의자 근처 18미터 범위 이내에서 달릴 때 발자국을 남기지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 26,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "의료인",
+            "persona_direction": 6,
+            "persona_parent": 25,
+            "persona_point": 1,
+            "persona_explanation": "자가 치료 또는 타인을 치료하는 속도가 15%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 27,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "의료인",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "자가 치료 또는 타인을 치료하는 속도가 20%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 28,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "의료인",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "자가 치료 또는 타인을 치료하는 속도가 25%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 29,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "피난처",
+            "persona_direction": 6,
+            "persona_parent": 25,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자에서 생존자를 구해낼 때마다 부상의 자가 치료 또는 타인을 치료하는 속도가 10%만큼 증가합니다. 이 효과는 중첩이 가능하며 90초간 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 30,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "피난처",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "광기의 의자에서 생존자를 구해낼 때마다 부상의 자가 치료 또는 타인을 치료하는 속도가 20%만큼 증가합니다. 이 효과는 중첩이 가능하며 120초간 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 31,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "피난처",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "광기의 의자에서 생존자를 구해낼 때마다 부상의 자가 치료 또는 타인을 치료하는 속도가 30%만큼 증가합니다. 이 효과는 중첩이 가능하며 150초간 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 32,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "수난",
+            "persona_direction": 6,
+            "persona_parent": 17,
+            "persona_point": 1,
+            "persona_explanation": "자신이 광기의 의자에 묶여 있는 동안 다른 생존자들이 서로의 위치를 알 수 있게 됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 33,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "죽 쑤어 개 주기",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자에서 생존자를 구출하는 속도가 40%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 34,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "반면교사",
+            "persona_direction": 9,
+            "persona_parent": 33,
+            "persona_point": 1,
+            "persona_explanation": "다른 생존자가 광기의 의자에 묶여 있는 동안, 광기의 의자 근처 12미터 범위 이내에서 자신의 이동 속도가 4%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 35,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "반면교사",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "다른 생존자가 광기의 의자에 묶여 있는 동안, 광기의 의자 근처 18미터 범위 이내에서 자신의 이동 속도가 6%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 36,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "반면교사",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "다른 생존자가 광기의 의자에 묶여 있는 동안, 광기의 의자 근처 24미터 범위 이내에서 자신의 이동 속도가 8%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 37,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "무릎 반사",
+            "persona_direction": 9,
+            "persona_parent": 36,
+            "persona_point": 1,
+            "persona_explanation": "판자를 뛰어넘은 뒤, 달리기 속도가 30%만큼 증가합니다. 지속시간 3초, 쿨타임 60초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 38,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "무릎 반사",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "판자를 뛰어넘은 뒤, 달리기 속도가 40%만큼 증가합니다. 지속시간 3초, 쿨타임 50초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 39,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "무릎 반사",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "판자를 뛰어넘은 뒤, 달리기 속도가 50%만큼 증가합니다. 지속시간 3초, 쿨타임 40초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 40,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "깨진 유리창 이론",
+            "persona_direction": 9,
+            "persona_parent": 39,
+            "persona_point": 1,
+            "persona_explanation": "창틀을 뛰어넘은 뒤, 달리는 속도가 50%만큼 증가합니다. 지속시간 3초, 쿨타임 40초.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 41,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "죄수의 딜레마",
+            "persona_direction": 9,
+            "persona_parent": 33,
+            "persona_point": 1,
+            "persona_explanation": "다른 생존자가 풍선에 묶여 있을 때, 감시자와 해당 생존자의 위치를 5초 동안 나타냅니다. 생존자가 광기의 의자에 묶이면 이 효과는 사라집니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 42,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "괴력",
+            "persona_direction": 9,
+            "persona_parent": 41,
+            "persona_point": 1,
+            "persona_explanation": "괴력으로 인해 나무 판자를 사용해 감시자를 적중시켰을 때 감시자의 기절 회복 속도가 10%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 43,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "괴력",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "괴력으로 인해 나무 판자를 사용해 감시자를 적중시켰을 때 감시자의 기절 회복 속도가 15%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 44,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "괴력",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "괴력으로 인해 나무 판자를 사용해 감시자를 적중시켰을 때 감시자의 기절 회복 속도가 20%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 45,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "생존의지",
+            "persona_direction": 9,
+            "persona_parent": 14,
+            "persona_point": 1,
+            "persona_explanation": "풍선에 묶여 있을 때, 몸부림 치는 속도가 10%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 46,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "생존의지",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "풍선에 묶여 있을 때, 몸부림 치는 속도가 15%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 47,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "생존의지",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "풍선에 묶여 있을 때, 몸부림 치는 속도가 20%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 48,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "구사일생",
+            "persona_direction": 9,
+            "persona_parent": 33,
+            "persona_point": 1,
+            "persona_explanation": "쓰러진 후 자가 치료의 한계치를 돌파하여 스스로 부상 상태로 회복합니다. 한 게임당 회복이 1회 가능합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 49,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "기계숙달",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "암호 해독 도중에 나타나는 교정의 성공 범위가 10%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 50,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "불굴",
+            "persona_direction": 12,
+            "persona_parent": 49,
+            "persona_point": 1,
+            "persona_explanation": "쓰러진 상태에서의 자가 치료 속도가 10%만큼 증가하고, 쓰러진 상태에서의 이동 속도가 100%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 51,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "불굴",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "쓰러진 상태에서의 자가 치료 속도가 15%만큼 증가하고, 쓰러진 상태에서의 이동 속도가 125%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 52,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "불굴",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "쓰러진 상태에서의 자가 치료 속도가 20%만큼 증가하고, 쓰러진 상태에서의 이동 속도가 150%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 53,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "공생 효과",
+            "persona_direction": 12,
+            "persona_parent": 52,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자에 묶인 생존자가 30미터 내에 있으면, 그 생존자를 향해 달려가는 이동 속도가 2%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 54,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "공생 효과",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자에 묶인 생존자가 30미터 내에 있으면, 그 생존자를 향해 달려가는 이동 속도가 4%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 55,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "공생 효과",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자에 묶인 생존자가 30미터 내에 있으면, 그 생존자를 향해 달려가는 이동 속도가 6%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 56,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "방관자",
+            "persona_direction": 12,
+            "persona_parent": 55,
+            "persona_point": 1,
+            "persona_explanation": "부상 또는 쓰러진 생존자가 30 미터 내에 있으면 그 생존자를 향해 달려가는 이동 속도가 10%만큼 증가합니다. 또한 타인을 치료하는 속도가 20%만큼 증가하며, 부상을 입은 생존자를 보여줍니다. 단, 부상을 입은 생존자가 풍선에 묶이면 보이지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 57,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "생존자 본능",
+            "persona_direction": 12,
+            "persona_parent": 49,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 1/2/3명 탈락할 때 자신의 암호 장치 해독 속도가 5%/15%/30%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 58,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "자연 회복",
+            "persona_direction": 12,
+            "persona_parent": 57,
+            "persona_point": 1,
+            "persona_explanation": "타인에게 치료받는 시간이 15%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 59,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "자연 회복",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "타인에게 치료받는 시간이 20%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 60,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "자연 회복",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "타인에게 치료받는 시간이 25%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 61,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "구름 속의 산책",
+            "persona_direction": 12,
+            "persona_parent": 57,
+            "persona_point": 1,
+            "persona_explanation": "남겨진 발자국의 지속시간이 1초 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 62,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "구름 속의 산책",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "남겨진 발자국의 지속시간이 1.5초 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 63,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "구름 속의 산책",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "남겨진 발자국의 지속시간이 2초 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 64,
+        "fields": {
+            "persona_sort": "생존자",
+            "persona_name": "강박증",
+            "persona_direction": 12,
+            "persona_parent": 49,
+            "persona_point": 1,
+            "persona_explanation": "주변 16미터 범위 내의 상자의 위치를 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 65,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "밤올빼미",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "경계 범위 내의 생존자들의 해독, 치료, 파괴 중 교정의 성공 범위가 30%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 66,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "사냥 본능",
+            "persona_direction": 3,
+            "persona_parent": 65,
+            "persona_point": 1,
+            "persona_explanation": "부상이 없는 생존자는 추격 상태가 아닌 감시자의 이동속도를 0.5%만큼 증가시킵니다. 1단계 스킬 오픈 후 더이상 제공하지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 67,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "사냥 본능",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "부상이 없는 생존자는 추격 상태가 아닌 감시자의 이동속도를 1%만큼 증가시킵니다. 1단계 스킬 오픈 후 더이상 제공하지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 68,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "사냥 본능",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "부상이 없는 생존자는 추격 상태가 아닌 감시자의 이동속도를 1.5%만큼 증가시킵니다. 1단계 스킬 오픈 후 더이상 제공하지 않습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 69,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "접대 매너",
+            "persona_direction": 3,
+            "persona_parent": 68,
+            "persona_point": 1,
+            "persona_explanation": "풍선을 들었을 때 이동 속도가 4%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 70,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "접대 매너",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "풍선을 들었을 때 이동 속도가 6%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 71,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "접대 매너",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "풍선을 들었을 때 이동 속도가 8%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 72,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "히든카드",
+            "persona_direction": 3,
+            "persona_parent": 71,
+            "persona_point": 1,
+            "persona_explanation": "대전이 시작되면 120초 후에 보조 특성을 1번 교체할 수 있습니다. 쿨타임은 비례에 따라 반환되고, 1번만 교체 가능합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 73,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "예고",
+            "persona_direction": 3,
+            "persona_parent": 65,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어오면 생존자들의 위치를 5초 동안 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 74,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "지명수배",
+            "persona_direction": 3,
+            "persona_parent": 73,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있을 때, 만약 나머지 3명의 생존자가 건강한 상태 또는 부상 상태라면 랜덤으로 그중 한 명의 윤곽을 나타내고 자신의 이동속도는 4%만큼 감소합니다. 광기의 의자에서 생존자가 구출되면, 이동속도 감소 효과는 즉시 사라지며, 생존자의 윤곽은 20초 후 사라집니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 75,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "지명수배",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있을 때, 만약 나머지 3명의 생존자가 건강한 상태 또는 부상 상태라면 랜덤으로 그중 한 명의 윤곽을 나타내고 자신의 이동속도는 2%만큼 감소합니다. 광기의 의자에서 생존자가 구출되면, 이동속도 감소 효과는 즉시 사라지며, 생존자의 윤곽은 20초 후 사라집니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 76,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "지명수배",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있을 때, 만약 나머지 3명의 생존자가 건강한 상태 또는 부상 상태라면 랜덤으로 그중 한 명의 윤곽을 나타내고 자신의 이동속도는 0%만큼 감소합니다. 광기의 의자에서 생존자가 구출되면, 이동속도 감소 효과는 즉시 사라지며, 생존자의 윤곽은 20초 후 사라집니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 77,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "붕괴",
+            "persona_direction": 3,
+            "persona_parent": 73,
+            "persona_point": 1,
+            "persona_explanation": "공격당한 생존자의 부상 자가치유 또는 치료를 받는 시간이 15%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 78,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "붕괴",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "공격당한 생존자의 부상 자가치유 또는 치료를 받는 시간이 15%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 79,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "붕괴",
+            "persona_direction": 3,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "공격당한 생존자의 부상 자가치유 또는 치료를 받는 시간이 25%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 80,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "이판사판",
+            "persona_direction": 3,
+            "persona_parent": 65,
+            "persona_point": 1,
+            "persona_explanation": "기절하고 나서 15초 안에 다시 기절할 경우, 기절 회복 속도가 20% 증가되며, 최대 60%까지 증가됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 81,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "관성",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "공격 회복 속도가 10%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 82,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "조롱",
+            "persona_direction": 6,
+            "persona_parent": 81,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 광기의 의자가 묶여 있을 때, 자신의 이동 속도가 3%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 83,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "조롱",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "생존자가 광기의 의자가 묶여 있을 때, 자신의 이동 속도가 4%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 84,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "조롱",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "생존자가 광기의 의자가 묶여 있을 때, 자신의 이동 속도가 5%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 85,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "광란",
+            "persona_direction": 6,
+            "persona_parent": 84,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어오면 공격 회복 속도가 5%만큼 증가하고, 이동 속도가 3%만큼 증가합니다. 이 효과는 120초 동안 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 86,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "광란",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "탈출구에 전기가 들어오면 공격 회복 속도가 7%만큼 증가하고, 이동 속도가 4%만큼 증가합니다. 이 효과는 120초 동안 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 87,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "광란",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "탈출구에 전기가 들어오면 공격 회복 속도가 10%만큼 증가하고, 이동 속도가 5%만큼 증가합니다. 이 효과는 120초 동안 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 88,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "만류",
+            "persona_direction": 6,
+            "persona_parent": 87,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어오면 일격필살 상태가 되어 일반 공격이 생존자에게 적중하면 반드시 쓰러뜨립니다. 이 상태는 120초 동안 지속됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 89,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "술래잡기",
+            "persona_direction": 6,
+            "persona_parent": 81,
+            "persona_point": 1,
+            "persona_explanation": "생존자를 12초 동안 지속적으로 추격하면 20%만큼의 창틀 넘는 속도 보너스를 얻습니다. 추격에 실패하거나, 특수 모션을 하거나, 공격을 하거나, 기절하면 보너스 효과는 사라집니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 90,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "구금광",
+            "persona_direction": 6,
+            "persona_parent": 89,
+            "persona_point": 1,
+            "persona_explanation": "광기의 의자의 카운트다운 속도가 3%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 91,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "구금광",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "광기의 의자의 카운트다운 속도가 6%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 92,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "구금광",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "광기의 의자의 카운트다운 속도가 9%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 93,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "거대 집게",
+            "persona_direction": 6,
+            "persona_parent": 89,
+            "persona_point": 1,
+            "persona_explanation": "풍선에 묶인 생존자의 몸부림 효과가 25%만큼 감소하고, 풍선에서 벗어나는 속도가 5%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 94,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "거대 집게",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "풍선에 묶인 생존자의 몸부림 효과가 50%만큼 감소하고, 풍선에서 벗어나는 속도가 10%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 95,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "거대 집게",
+            "persona_direction": 6,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "풍선에 묶인 생존자의 몸부림 효과가 75%만큼 감소하고, 풍선에서 벗어나는 속도가 15%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 96,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "무인생환",
+            "persona_direction": 6,
+            "persona_parent": 81,
+            "persona_point": 1,
+            "persona_explanation": "쓰러진 생존자 근처 10미터 범위 안에, 자유롭게 이동할 수 있는 생존자가 있을 때마다 감시자의 공격 회복 속도가 10%만큼 증가합니다. 최대 3스탯.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 97,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "사슴 사냥",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "주변 18미터 범위 내의 쓰러진 생존자들의 위치를 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 98,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "소유욕",
+            "persona_direction": 9,
+            "persona_parent": 97,
+            "persona_point": 1,
+            "persona_explanation": "경계 범위 내의 생존자들의 해독, 치료, 파괴 속도를 3%만큼 감소시킵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 99,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "소유욕",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "경계 범위 내의 생존자들의 해독, 치료, 파괴 속도를 5%만큼 감소시킵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 100,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "소유욕",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "경계 범위 내의 생존자들의 해독, 치료, 파괴 속도를 7%만큼 감소시킵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 101,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "후유증",
+            "persona_direction": 9,
+            "persona_parent": 100,
+            "persona_point": 1,
+            "persona_explanation": "쓰러진 생존자의 자가 치료 한계치가 10%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 102,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "후유증",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "쓰러진 생존자의 자가 치료 한계치가 20%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 103,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "후유증",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "쓰러진 생존자의 자가 치료 한계치가 30%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 104,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "요란법석",
+            "persona_direction": 9,
+            "persona_parent": 103,
+            "persona_point": 1,
+            "persona_explanation": "게임이 시작되고 일정 시간동안 지속적으로 존재감을 얻습니다. 이 효과는 1단계 스킬을 획득한 후 사라집니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 105,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "이명",
+            "persona_direction": 9,
+            "persona_parent": 97,
+            "persona_point": 1,
+            "persona_explanation": "생존자와의 거리가 36미터 이내일 때, 알림을 표시합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 106,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "추적",
+            "persona_direction": 9,
+            "persona_parent": 105,
+            "persona_point": 1,
+            "persona_explanation": "생존자를 12초 동안 계속해서 추격하면 10%만큼의 이동 속도 보너스를 얻습니다. 추격에 실패하거나, 특수 모션을 하거나, 공격을 하거나, 기절하면 이동 속도가 원래대로 돌아옵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 107,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "추적",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "생존자를 10초 동안 계속해서 추격하면 10%만큼의 이동 속도 보너스를 얻습니다. 추격에 실패하거나, 특수 모션을 하거나, 공격을 하거나, 기절하면 이동 속도가 원래대로 돌아옵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 108,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "추적",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "생존자를 8초 동안 계속해서 추격하면 10%만큼의 이동 속도 보너스를 얻습니다. 추격에 실패하거나, 특수 모션을 하거나, 공격을 하거나, 기절하면 이동 속도가 원래대로 돌아옵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 109,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "청소부",
+            "persona_direction": 9,
+            "persona_parent": 105,
+            "persona_point": 1,
+            "persona_explanation": "주변 20미터 범위 내의 치료하고 있거나 치료받고 있는 생존자의 위치를 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 110,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "청소부",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "주변 26미터 범위 내의 치료하고 있거나 치료받고 있는 생존자의 위치를 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 111,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "청소부",
+            "persona_direction": 9,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "주변 32미터 범위 내의 치료하고 있거나 치료받고 있는 생존자의 위치를 나타냅니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 112,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "폐쇄공포증",
+            "persona_direction": 9,
+            "persona_parent": 97,
+            "persona_point": 1,
+            "persona_explanation": "탈출구에 전기가 들어왔을 때, 만약 네 명의 행동 가능한 생존자가 있다면(쓰러지거나, 풍선에 묶이거나, 광기의 의자에 묶인 상태는 행동불능 상태) 20초 동안 탈출구를 여는 속도가 70%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 113,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "상처 악화",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 1,
+            "persona_explanation": "부상 당한 생존자의 해독, 치료, 파괴 속도가 5%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 114,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "메마름",
+            "persona_direction": 12,
+            "persona_parent": 113,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있고 감시자가 광기의 의자로부터 18미터 범위 밖에 위치할 때, 생존자가 감시자의 일반 공격을 맞을때 발동하는 이동속도 증가 효과가 10%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 115,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "메마름",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있고 감시자가 광기의 의자로부터 18미터 범위 밖에 위치할 때, 생존자가 감시자의 일반 공격을 맞을때 발동하는 이동속도 증가 효과가 20%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 116,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "메마름",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있고 감시자가 광기의 의자로부터 18미터 범위 밖에 위치할 때, 생존자가 감시자의 일반 공격을 맞을때 발동하는 이동속도 증가 효과가 30%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 117,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "파괴욕구",
+            "persona_direction": 12,
+            "persona_parent": 116,
+            "persona_point": 1,
+            "persona_explanation": "나무 판자를 파괴하는 속도가 20%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 118,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "파괴욕구",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "나무 판자를 파괴하는 속도가 30%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 119,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "파괴욕구",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "나무 판자를 파괴하는 속도가 40%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 120,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "밀폐 공간",
+            "persona_direction": 12,
+            "persona_parent": 119,
+            "persona_point": 1,
+            "persona_explanation": "감시자가 창틀을 넘을 때 창틀을 20초 동안 봉쇄할 수 있습니다. 지속시간 동안에는 감시자와 생존자 모두 이 창틀을 넘을 수 없습니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 121,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "공황",
+            "persona_direction": 12,
+            "persona_parent": 113,
+            "persona_point": 1,
+            "persona_explanation": "부상 상태이거나, 쓰러져 있거나, 광기의 의자에 묶여 있는 생존자 한 명당, 다른 모든 생존자의 해독, 치료, 파괴 속도가 3%씩 감소합니다. 이 효과는 중첩됩니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 122,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "분노",
+            "persona_direction": 12,
+            "persona_parent": 121,
+            "persona_point": 1,
+            "persona_explanation": "전투 본능이 감시자가 기절 또는 몸부림치는 생존자를 놓칠 때의 행동불능 상태에서 회복하는 속도를 10%만큼 증가시킵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 123,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "분노",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "전투 본능이 감시자가 기절 또는 몸부림치는 생존자를 놓칠 때의 행동불능 상태에서 회복하는 속도를 15%만큼 증가시킵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 124,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "분노",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "전투 본능이 감시자가 기절 또는 몸부림치는 생존자를 놓칠 때의 행동불능 상태에서 회복하는 속도를 20%만큼 증가시킵니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 125,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "광폭화",
+            "persona_direction": 12,
+            "persona_parent": 121,
+            "persona_point": 1,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있을 때, 자신의 공격 회복 속도가 15%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 126,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "광폭화",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 2,
+            "persona_explanation": "생존자가 광기의 의자에 묶여 있을 때, 자신의 공격 회복 속도가 20%만큼 증가합니다.",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 127,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "광폭화",
+            "persona_direction": 12,
+            "persona_parent": null,
+            "persona_point": 3,
+            "persona_explanation": "광폭화",
+            "persona_opinion": null
+        }
+    },
+    {
+        "model": "characters.persona",
+        "pk": 128,
+        "fields": {
+            "persona_sort": "감시자",
+            "persona_name": "자제",
+            "persona_direction": 12,
+            "persona_parent": 113,
+            "persona_point": 1,
+            "persona_explanation": "경계 범위의 반경이 15%만큼 감소합니다.",
+            "persona_opinion": null
+        }
+    }
+]

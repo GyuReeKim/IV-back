@@ -1,0 +1,72 @@
+[
+    {
+        "model": "characters.trait",
+        "pk": 1,
+        "fields": {
+            "trait_name": "경청",
+            "trait_cooldown": null,
+            "trait_explanation": "감시자가 귀를 기울여 경청하는 동안 생존자가 달리는 기척과 모든 특수 모션은 감시자에게 발각됩니다.",
+            "trait_opinion": null
+        }
+    },
+    {
+        "model": "characters.trait",
+        "pk": 2,
+        "fields": {
+            "trait_name": "비정상",
+            "trait_cooldown": 90,
+            "trait_explanation": "세상만사가 무상하니, 결국 이를 깨닫는 이가 있을 것입니다. 완전히 해독되지 않은 암호 장치 근처에서 사용하면 암호 장치의 해독 진도를 60%만큼 복구합니다. 암호 장치의 해독 진도를 복구하는 효과는 전투 시간의 흐름과 사용 횟수의 증가에 따라 감소하며 최저 3%까지 낮아집니다.",
+            "trait_opinion": null
+        }
+    },
+    {
+        "model": "characters.trait",
+        "pk": 3,
+        "fields": {
+            "trait_name": "흥분",
+            "trait_cooldown": 100,
+            "trait_explanation": "반항하는 사냥감은 사람을 더욱 흥분시키는 법입니다. 현재 제어 상태를 해제하고 이어지는 5초동안 제어 효과를 무시합니다.",
+            "trait_opinion": null
+        }
+    },
+    {
+        "model": "characters.trait",
+        "pk": 4,
+        "fields": {
+            "trait_name": "순찰자",
+            "trait_cooldown": 90,
+            "trait_explanation": "가만히 있으면 항상 골칫거리들이 찾아옵니다. 그 녀석들은 절대 길을 잃는 법이 없죠. 속도가 빠른 작은 순찰자 한 마리를 조종하여 생존자에게 접근해 붙잡습니다. 순찰자에게 붙잡힌 생존자는 20초 동안 윤곽으로 위치가 표시되며 5초에 한번씩 순찰자가 힘을 주어 동작을 멈추게 됩니다.",
+            "trait_opinion": null
+        }
+    },
+    {
+        "model": "characters.trait",
+        "pk": 5,
+        "fields": {
+            "trait_name": "텔레포트",
+            "trait_cooldown": 100,
+            "trait_explanation": "공포가 퍼지면 닿지 않는 곳이 없습니다. 길게 터치하여 목표를 지정하면 잠시 시전한 후 해당 목표 근처로 이동합니다. 지정할 수 있는 목료: 해독되지 않은 암호 장치, 생존자를 묶어놓은 광기의 의자, 공장장의 꼭두각시, 열 수 있는 탈출구.",
+            "trait_opinion": null
+        }
+    },
+    {
+        "model": "characters.trait",
+        "pk": 6,
+        "fields": {
+            "trait_name": "정탐자",
+            "trait_cooldown": 30,
+            "trait_explanation": "눈알 앞에서 숨을 수 있는 사각지대란 없습니다. 서 있는위치에 80초 동안 지속되는 정탐자를 떨어뜨리면, 주위에 존재하는 생존자를 드러냅니다. 동시에 정탐자의 시야에 걸린 생존자의 이동 속도와 판자 및 창문 모션 속도가 조금 느려지며, 이 외 모션 속도는 대폭 느려집니다. 정탐자는 뽑아 없앨 수 있습니다.",
+            "trait_opinion": null
+        }
+    },
+    {
+        "model": "characters.trait",
+        "pk": 7,
+        "fields": {
+            "trait_name": "플래시",
+            "trait_cooldown": 150,
+            "trait_explanation": "놀래키고 당황하게 하는 것은 한 순간이면 충분합니다. 터치하여 사용하면 바라보는 방향으로 순간 이동합니다. 끌어서 사용하면 커서를 끌은 방향으로 순간 이동합니다.",
+            "trait_opinion": null
+        }
+    }
+]

@@ -1,0 +1,453 @@
+[
+    {
+        "model": "characters.character",
+        "pk": 1,
+        "fields": {
+            "name": "추리용 분신",
+            "another_name": "행운아",
+            "image": null,
+            "explanation": "행운아",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 2,
+        "fields": {
+            "name": "에밀리 다이어",
+            "another_name": "의사",
+            "image": null,
+            "explanation": "의사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 3,
+        "fields": {
+            "name": "프레디 라일리",
+            "another_name": "변호사",
+            "image": null,
+            "explanation": "변호사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 4,
+        "fields": {
+            "name": "크리처 피어슨",
+            "another_name": "도둑",
+            "image": null,
+            "explanation": "도둑",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 5,
+        "fields": {
+            "name": "엠마 우즈",
+            "another_name": "정원사",
+            "image": null,
+            "explanation": "정원사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 6,
+        "fields": {
+            "name": "세르베 르 로이",
+            "another_name": "마술사",
+            "image": null,
+            "explanation": "마술사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 7,
+        "fields": {
+            "name": "커트 프랭크",
+            "another_name": "모험가",
+            "image": null,
+            "explanation": "모험가",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 8,
+        "fields": {
+            "name": "나이브 수베다르",
+            "another_name": "용병",
+            "image": null,
+            "explanation": "용병",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 9,
+        "fields": {
+            "name": "피오나 길먼",
+            "another_name": "샤먼",
+            "image": null,
+            "explanation": "샤먼",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 10,
+        "fields": {
+            "name": "마타 베함필",
+            "another_name": "공군",
+            "image": null,
+            "explanation": "공군",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 11,
+        "fields": {
+            "name": "트레이시 레즈닉",
+            "another_name": "기계공",
+            "image": null,
+            "explanation": "기계공",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 12,
+        "fields": {
+            "name": "윌리엄 엘리스",
+            "another_name": "포워드",
+            "image": null,
+            "explanation": "포워드",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 13,
+        "fields": {
+            "name": "헬레나 아담스",
+            "another_name": "맹인",
+            "image": null,
+            "explanation": "맹인",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 14,
+        "fields": {
+            "name": "베라 나이르",
+            "another_name": "조향사",
+            "image": null,
+            "explanation": "조향사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 15,
+        "fields": {
+            "name": "레오",
+            "another_name": "공장장",
+            "image": null,
+            "explanation": "공장장",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 16,
+        "fields": {
+            "name": "조커",
+            "another_name": "광대",
+            "image": null,
+            "explanation": "광대",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 17,
+        "fields": {
+            "name": "베인",
+            "another_name": "사냥터지기",
+            "image": null,
+            "explanation": "사냥터지기",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 18,
+        "fields": {
+            "name": "잭",
+            "another_name": "리퍼",
+            "image": null,
+            "explanation": "리퍼",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 19,
+        "fields": {
+            "name": "비올레타",
+            "another_name": "거미",
+            "image": null,
+            "explanation": "거미",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 20,
+        "fields": {
+            "name": "미치코",
+            "another_name": "붉은 나비",
+            "image": null,
+            "explanation": "붉은 나비",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 21,
+        "fields": {
+            "name": "하스터",
+            "another_name": "노란 옷의 왕",
+            "image": null,
+            "explanation": "노란 옷의 왕",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 22,
+        "fields": {
+            "name": "케빈 아유소",
+            "another_name": "카우보이",
+            "image": null,
+            "explanation": "카우보이",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 23,
+        "fields": {
+            "name": "사필안/범무구",
+            "another_name": "우산의 영혼",
+            "image": null,
+            "explanation": "우산의 영혼",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 24,
+        "fields": {
+            "name": "마가레타 젤러",
+            "another_name": "무희",
+            "image": null,
+            "explanation": "무희",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 25,
+        "fields": {
+            "name": "요셉",
+            "another_name": "사진사",
+            "image": null,
+            "explanation": "사진사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 26,
+        "fields": {
+            "name": "일라이 클락",
+            "another_name": "선지자",
+            "image": null,
+            "explanation": "선지자",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 27,
+        "fields": {
+            "name": "발크",
+            "another_name": "광기의 눈",
+            "image": null,
+            "explanation": "광기의 눈",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 28,
+        "fields": {
+            "name": "이솝 칼",
+            "another_name": "납관사",
+            "image": null,
+            "explanation": "납관사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 29,
+        "fields": {
+            "name": "이드라",
+            "another_name": "꿈의 마녀",
+            "image": null,
+            "explanation": "꿈의 마녀",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 30,
+        "fields": {
+            "name": "노튼 캠벨",
+            "another_name": "탐사원",
+            "image": null,
+            "explanation": "탐사원",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 31,
+        "fields": {
+            "name": "패티샤 도리발",
+            "another_name": "주술사",
+            "image": null,
+            "explanation": "주술사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 32,
+        "fields": {
+            "name": "로비",
+            "another_name": "울보",
+            "image": null,
+            "explanation": "울보",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 33,
+        "fields": {
+            "name": "무어로",
+            "another_name": "야만인",
+            "image": null,
+            "explanation": "야만인",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 34,
+        "fields": {
+            "name": "루키노",
+            "another_name": "재앙의 도마뱀",
+            "image": null,
+            "explanation": "재앙의 도마뱀",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 35,
+        "fields": {
+            "name": "마이크 모튼",
+            "another_name": "곡예사",
+            "image": null,
+            "explanation": "곡예사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 36,
+        "fields": {
+            "name": "호세 바덴",
+            "another_name": "항해사",
+            "image": null,
+            "explanation": "항해사",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 37,
+        "fields": {
+            "name": "마리",
+            "another_name": "블러디 퀸",
+            "image": null,
+            "explanation": "블러디 퀸",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 38,
+        "fields": {
+            "name": "데미 버번",
+            "another_name": "바텐더",
+            "image": null,
+            "explanation": "바텐더",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 39,
+        "fields": {
+            "name": "봉봉",
+            "another_name": "수위 26호",
+            "image": null,
+            "explanation": "수위 26호",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 40,
+        "fields": {
+            "name": "빅터 글랜즈",
+            "another_name": "우편 배달부",
+            "image": null,
+            "explanation": "우편 배달부",
+            "difficulty": null
+        }
+    },
+    {
+        "model": "characters.character",
+        "pk": 41,
+        "fields": {
+            "name": "안",
+            "another_name": "사도",
+            "image": null,
+            "explanation": "사도",
+            "difficulty": null
+        }
+    }
+]
