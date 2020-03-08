@@ -31,3 +31,16 @@ class Position(models.Model):
 
     def __str__(self):
         return f'{self.position_name} - {self.position_grade}'
+
+
+class Persona(models.Model):
+    persona_sort = models.CharField(max_length=50)
+    persona_name = models.CharField(max_length=50)
+    persona_direction = models.IntegerField() # 몇시 인격
+    persona_parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
+    persona_point = models.IntegerField()
+    persona_explanation = models.TextField()
+    persona_opinion = models.TextField(null=True, blank=True) # 인격에 대한 의견 (사용할 지 고민)
+
+    def __str__(self):
+        return f'{self.persona_name} - {self.persona_point}'
