@@ -26,4 +26,11 @@ urlpatterns = [
     path('traits/create/', views.trait_create),
     path('traits/<int:id>/', views.trait_detail),
     path('traits/<int:id>/change/', views.set_trait_detail),
+
+    # 생존자
+    path('survivors/', views.survivor_list),
+    path('survivors/create/<int:character_id>/', views.survivor_create),
+    path('survivors/<int:id>/', views.survivor_detail),
+    path('survivors/<int:survivor_id>/update/<character_id>/', views.update_survivor_detail),
+    path('survivors/<int:id>/delete/', views.delete_survivor_detail),
 ]

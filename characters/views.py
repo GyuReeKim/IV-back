@@ -1,13 +1,13 @@
 from rest_framework.response import Response
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, get_object_or_404
-from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer, TraitSerializer
+from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer, TraitSerializer, SurvivorSerializer, SurvivorSetSerializer
 
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from .models import Character, Position, Persona, Trait
+from .models import Character, Position, Persona, Trait, Survivor
 
 # Create your views here.
 
@@ -225,3 +225,61 @@ def set_trait_detail(request, id):
     elif request.method == "DELETE":
         trait.delete()
         return HttpResponse(status=204)
+
+
+
+# 생존자 리스트
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def survivor_list(request):
+    survivors = Survivor.objects.all()
+    serializer = SurvivorSerializer(survivors, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+# 생존자 생성
+@api_view(['POST'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def survivor_create(request, character_id):
+    character = get_object_or_404(Character, id=character_id)
+    set_serializer = SurvivorSetSerializer(data=request.data)
+    if set_serializer.is_valid():
+        survivor = set_serializer.save(character=character)
+        serializer = SurvivorSerializer(survivor)
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
+
+
+# 생존자 정보
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def survivor_detail(request, id):
+    survivor = get_object_or_404(Survivor, id=id)
+    serializer = SurvivorSerializer(survivor)
+    return JsonResponse(serializer.data)
+
+
+# 생존자 수정
+@api_view(['PUT'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def update_survivor_detail(request, survivor_id, character_id):
+    survivor = get_object_or_404(Survivor, id=survivor_id)
+    character = get_object_or_404(Character, id=character_id)
+    set_serializer = SurvivorSetSerializer(survivor, data=request.data)
+    if set_serializer.is_valid():
+        update_survivor = set_serializer.save(character=character)
+        serializer = SurvivorSerializer(update_survivor)
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
+
+
+# 생존자 삭제
+@api_view(['DELETE'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def delete_survivor_detail(request, id):
+    survivor = get_object_or_404(Survivor, id=id)
+    survivor.delete()
+    return HttpResponse(status=204)

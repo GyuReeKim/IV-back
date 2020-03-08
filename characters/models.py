@@ -54,3 +54,23 @@ class Trait(models.Model):
 
     def __str__(self):
         return self.trait_name
+
+
+class Survivor(models.Model):
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    positions_of_survivor = models.ManyToManyField(Position, related_name="survivors_of_positon")
+    position_explanation = models.TextField(null=True, blank=True)
+    external_trait1 = models.CharField(max_length=50)
+    external_trait1_explanation = models.TextField()
+    external_trait2 = models.CharField(max_length=50, null=True, blank=True)
+    external_trait2_explanation = models.TextField(null=True, blank=True)
+    external_trait3 = models.CharField(max_length=50, null=True, blank=True)
+    external_trait3_explanation = models.TextField(null=True, blank=True)
+    external_trait4 = models.CharField(max_length=50, null=True, blank=True)
+    external_trait4_explanation = models.TextField(null=True, blank=True)
+    rumor = models.TextField()
+    suitable_personas_of_survivor = models.ManyToManyField(Persona, related_name="suitable_survivors_of_persona")
+    persona_build_explanation = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.character.another_name} (생존자)'
