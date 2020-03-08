@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Character, Position, Persona
+from .models import Character, Position, Persona, Trait
 from rest_framework_recursive.fields import RecursiveField
 
 
@@ -48,4 +48,15 @@ class PersonaChildSerializer(serializers.ModelSerializer):
             'persona_name', 'persona_direction', 
             'persona_point', 'persona_explanation', 'persona_opinion',
         )
+        read_only_fields = ('id',)
+
+
+class TraitSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Trait
+        fields = '__all__'
+        # fields = (
+        #     'id', 'trait_name', 'trait_cooldown', 
+        #     'trait_explanation', 'trait_opinion',
+        # )
         read_only_fields = ('id',)

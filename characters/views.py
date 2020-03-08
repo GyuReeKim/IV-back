@@ -1,13 +1,13 @@
 from rest_framework.response import Response
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, get_object_or_404
-from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer
+from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer, TraitSerializer
 
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from .models import Character, Position, Persona
+from .models import Character, Position, Persona, Trait
 
 # Create your views here.
 
@@ -173,3 +173,55 @@ def delete_persona_detail(request, id):
     persona = get_object_or_404(Persona, id=id)
     persona.delete()
     return HttpResponse(status=204)
+
+
+
+# 캐릭터 보조 특성 리스트
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def trait_list(request):
+    traits = Trait.objects.all()
+    serializer = TraitSerializer(traits, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+
+# 캐릭터 보조 특성 생성
+@api_view(['POST'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def trait_create(request):
+    serializer = TraitSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
+
+
+# 캐릭터 보조 특성 정보
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def trait_detail(request, id):
+    trait = get_object_or_404(Trait, id=id)
+    serializer = TraitSerializer(trait)
+    return JsonResponse(serializer.data)
+
+
+# 캐릭터 보조 특성
+@api_view(['PUT', 'DELETE'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def set_trait_detail(request, id):
+    trait = get_object_or_404(Trait, id=id)
+
+    # 캐릭터 보조 특성 수정
+    if request.method == "PUT":
+        serializer = TraitSerializer(trait, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data)
+        return HttpResponse(status=400)
+        
+    # 캐릭터 보조 특성 삭제
+    elif request.method == "DELETE":
+        trait.delete()
+        return HttpResponse(status=204)

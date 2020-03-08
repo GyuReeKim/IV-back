@@ -44,3 +44,13 @@ class Persona(models.Model):
 
     def __str__(self):
         return f'{self.persona_name} - {self.persona_point}'
+
+
+class Trait(models.Model):
+    trait_name = models.CharField(max_length=50)
+    trait_cooldown = models.IntegerField(null=True, blank=True)
+    trait_explanation = models.CharField(max_length=50)
+    trait_opinion = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return self.trait_name
