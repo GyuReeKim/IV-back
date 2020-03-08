@@ -38,3 +38,14 @@ class PersonaSerializer(serializers.ModelSerializer):
             'persona_explanation', 'persona_opinion',
         )
         read_only_fields = ('id',)
+
+
+class PersonaChildSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Persona
+        fields = (
+            'id', 'persona_sort', 
+            'persona_name', 'persona_direction', 
+            'persona_point', 'persona_explanation', 'persona_opinion',
+        )
+        read_only_fields = ('id',)
