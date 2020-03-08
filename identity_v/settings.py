@@ -164,3 +164,7 @@ REST_USE_JWT = True
 ACCOUNT_EMAIL_REQUIRED = False
 
 ACCOUNT_EMAIL_VERIFICATION = None
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
