@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'accounts',
+    'characters',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
