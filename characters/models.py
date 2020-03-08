@@ -22,3 +22,12 @@ class Character(models.Model):
     
     def __str__(self):
         return f'{self.name} ({self.another_name})'
+
+
+class Position(models.Model):
+    position_name = models.CharField(max_length=50)
+    position_grade = models.CharField(max_length=50)
+    position_role = models.TextField()
+
+    def __str__(self):
+        return f'{self.position_name} - {self.position_grade}'
