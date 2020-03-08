@@ -16,4 +16,5 @@ urlpatterns = [
 
     # 캐릭터 인격
     path('personas/', views.persona_list),
+    path('personas/create/<int:parent_id>/', views.persona_create),
 ]

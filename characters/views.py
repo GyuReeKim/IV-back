@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, get_object_or_404
-from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer
+from .serializers import CharacterSerializer, PositionSerializer, PersonaSerializer, PersonaChildSerializer
 
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
@@ -122,3 +122,19 @@ def persona_list(request):
     personas = Persona.objects.all()
     serializer = PersonaSerializer(personas, many=True)
     return JsonResponse(serializer.data, safe=False)
+
+
+# 캐릭터 인격 생성
+@api_view(['POST'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def persona_create(request, parent_id):
+    parent = None
+    if parent_id != 0:
+        parent = get_object_or_404(Persona, id=parent_id)
+    child_serializer = PersonaChildSerializer(data=request.data)
+    if child_serializer.is_valid():
+        persona_parent = child_serializer.save(persona_parent=parent)
+        serializer = PersonaSerializer(persona_parent)
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
