@@ -17,4 +17,7 @@ urlpatterns = [
     # 캐릭터 인격
     path('personas/', views.persona_list),
     path('personas/create/<int:parent_id>/', views.persona_create),
+    path('personas/<int:id>/', views.persona_detail),
+    path('personas/<int:child_id>/update/<parent_id>/', views.update_persona_detail),
+    path('personas/<int:id>/delete/', views.delete_persona_detail),
 ]

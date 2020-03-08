@@ -138,3 +138,38 @@ def persona_create(request, parent_id):
         serializer = PersonaSerializer(persona_parent)
         return JsonResponse(serializer.data)
     return HttpResponse(status=400)
+
+
+# 캐릭터 인격 정보
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def persona_detail(request, id):
+    persona = get_object_or_404(Persona, id=id)
+    serializer = PersonaSerializer(persona)
+    return JsonResponse(serializer.data)
+
+
+# 캐릭터 인격 수정
+@api_view(['PUT'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def update_persona_detail(request, child_id, parent_id):
+    persona = get_object_or_404(Persona, id=child_id)
+    parent = None
+    if parent != 0:
+        parent = get_object_or_404(Persona, id=parent_id)
+    serializer = PersonaSerializer(persona, data=request.data)
+    if serializer.is_valid():
+        serializer.save(persona_parent=parent)
+        return JsonResponse(serializer.data)
+    return HttpResponse(status=400)
+
+
+# 캐릭터 인격 삭제
+@api_view(['DELETE'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def delete_persona_detail(request, id):
+    persona = get_object_or_404(Persona, id=id)
+    persona.delete()
+    return HttpResponse(status=204)
