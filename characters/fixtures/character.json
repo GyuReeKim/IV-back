@@ -449,5 +449,16 @@
             "explanation": "사도",
             "difficulty": null
         }
+    },
+    {
+        "model": "characters.character",
+        "pk": 42,
+        "fields": {
+            "name": "앤드루 크리스",
+            "another_name": "묘지기",
+            "image": null,
+            "explanation": "묘지기",
+            "difficulty": null
+        }
     }
 ]
