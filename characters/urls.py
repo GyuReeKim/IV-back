@@ -13,4 +13,7 @@ urlpatterns = [
     path('positions/create/', views.position_create),
     path('positions/<int:id>/', views.position_detail),
     path('positions/<int:id>/change/', views.set_position_detail),
+
+    # 캐릭터 인격
+    path('personas/', views.persona_list),
 ]
