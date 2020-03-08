@@ -5,4 +5,5 @@ urlpatterns = [
     # 캐릭터
     path('', views.character_list),
     path('create/', views.character_create),
+    path('<int:id>/', views.character_detail),
 ]

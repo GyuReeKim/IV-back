@@ -30,3 +30,12 @@ def character_create(request):
         serializer.save()
         return JsonResponse(serializer.data)
     return HttpResponse(status=400)
+
+
+# 캐릭터 정보
+@api_view(['GET'])
+@permission_classes((AllowAny,))
+def character_detail(request, id):
+    character = get_object_or_404(Character, id=id)
+    serializer = CharacterSerializer(character)
+    return JsonResponse(serializer.data)
