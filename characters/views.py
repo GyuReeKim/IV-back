@@ -39,3 +39,24 @@ def character_detail(request, id):
     character = get_object_or_404(Character, id=id)
     serializer = CharacterSerializer(character)
     return JsonResponse(serializer.data)
+
+
+# 캐릭터
+@api_view(['PUT', 'DELETE'])
+@permission_classes((IsAdminUser,))
+@authentication_classes((JSONWebTokenAuthentication,))
+def set_character_detail(request, id):
+    character = get_object_or_404(Character, id=id)
+
+    # 캐릭터 수정
+    if request.method == "PUT":
+        serializer = CharacterSerializer(character, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data)
+        return HttpResponse(status=400)
+        
+    # 캐릭터 삭제
+    elif request.method == "DELETE":
+        character.delete()
+        return HttpResponse(status=204)
