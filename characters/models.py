@@ -108,3 +108,35 @@ class Hunter(models.Model):
 
     def __str__(self):
         return f'{self.character.another_name} (감시자)'
+
+
+# class Skin(models.Model):
+#     character = models.ForeignKey(Character, on_delete=models.CASCADE)
+#     skin_name = models.CharField(max_length=50)
+#     skin_explanation = models.TextField()
+#     # skin_image = models.ImageField()
+
+
+# class Accessory(models.Model):
+    # skin은 manytomany로 바꾸자
+#     skin = models.ForeignKey(Skin, on_delete=models.CASCADE)
+#     accessory_name = models.CharField(max_length=50)
+#     accessory_explanation = models.TextField()
+#     # accessory_image = models.ImageField()
+
+
+# class Survey(models.Model):
+#     survey_keyword = models.CharField(max_length=50)
+#     survey_content = models.TextField()
+
+
+# class Answer(models.Model):
+#     survey = models.ForeignKey(Survey, on_delete=models.CASCADE)
+#     answer_content = models.TextField()
+#     character_list = models.ManyToManyField(Character, related_name="answer_list")
+
+
+# class Recommendation(models.Model):
+#     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+#     character = models.ForeignKey(Character, on_delete=models.CASCADE)
+#     created_at = models.DateTimeField(auto_now_add=True)
